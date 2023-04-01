@@ -1,0 +1,23 @@
+#Create a list of services using Python. The list should be empty initially.
+aws_inventory = []
+
+#Populate the list using append or insert.
+aws_inventory += ["EC2", "Code Build", "S3", "DynamoDB", "SQS", "Cloud Watch", "Cloud Front", "SNS", "IAM", "ElastiCache", "Cognito", "Auto-scaling"]
+
+#Print the list and the length of the list.
+print(aws_inventory)
+print(len(aws_inventory))
+
+#Remove two specific services from the list by name or by index.
+aws_inventory.remove("Cloud Front")
+aws_inventory.remove("SQS")
+
+#add another service to the list by inserting it to the FIRST position
+aws_inventory.insert(0,"SQS")
+
+#add another service to the list by inserting it to the LAST position
+aws_inventory.insert(12,"Cloud Front")
+
+#Print the new list and the new length of the list.
+print(aws_inventory)
+print(len(aws_inventory))

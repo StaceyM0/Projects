@@ -21,3 +21,4 @@ aws_inventory.insert(12,"Cloud Front")
 #Print the new list and the new length of the list.
 print(aws_inventory)
 print(len(aws_inventory))
+

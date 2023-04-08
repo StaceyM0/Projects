@@ -23,13 +23,6 @@ for file in files:
     #size = os.path.getsize(file)
     #created = datetime.datetime.fromtimestamp(os.path.getctime(file)).strftime('%Y-%m-%d %H:%M:%S')
     #modified = datetime.datetime.fromtimestamp(os.path.getmtime(file)).strftime('%Y-%m-%d %H:%M:%S')
-
-
-
-    #path = os.path.abspath(file)
-    #size = os.path.getsize(file)
-    #created = datetime.datetime.fromtimestamp(os.path.getctime(file)).strftime('%Y-%m-%d %H:%M:%S')
-    #modified = datetime.datetime.fromtimestamp(os.path.getmtime(file)).strftime('%Y-%m-%d %H:%M:%S')
     
     # Create a dictionary containing the file information
     file_dict = {

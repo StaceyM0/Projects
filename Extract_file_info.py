@@ -18,6 +18,14 @@ for file in files:
     created = os.path.getctime(file)
     modified = os.path.getmtime(file)
 
+
+    #path = os.path.abspath(file)
+    #size = os.path.getsize(file)
+    #created = datetime.datetime.fromtimestamp(os.path.getctime(file)).strftime('%Y-%m-%d %H:%M:%S')
+    #modified = datetime.datetime.fromtimestamp(os.path.getmtime(file)).strftime('%Y-%m-%d %H:%M:%S')
+
+
+
     #path = os.path.abspath(file)
     #size = os.path.getsize(file)
     #created = datetime.datetime.fromtimestamp(os.path.getctime(file)).strftime('%Y-%m-%d %H:%M:%S')
@@ -34,6 +42,7 @@ for file in files:
     
     # Add the dictionary to the file_list
     file_list.append(file_dict)
+
 
 # Print the list of dictionaries
 print(*file_list, sep="\n")

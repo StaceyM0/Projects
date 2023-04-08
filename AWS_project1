@@ -8,7 +8,7 @@ aws_inventory += ["EC2", "Code Build", "S3", "DynamoDB", "SQS", "Cloud Watch", "
 print(aws_inventory)
 print(len(aws_inventory))
 
-#Remove two specific services from the list by name or by index.
+#Remove two specific services from the list by name.
 aws_inventory.remove("Cloud Front")
 aws_inventory.remove("SQS")
 

@@ -1,12 +1,18 @@
-import boto3 # imports the boto3 library
+import boto3
 
-# create a DynamoDB resource object which will interact with the DynamoDB service
-dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
+# create a DynamoDB client
+dynamodb = boto3.resource('dynamodb')
 
-table_name = 'Bucket_List' # Adding a variable to table_name
+table = dynamodb.Table('Bucket_List') # get a reference to the table
 
-table = dynamodb.Table('Bucket_List') # Makes a reference to the DynamoDB table
+# specify the key of the item to delete
+key = {
+    'Country': 'France', 'City': 'Provence'}
+    
+# delete the item
+response = table.delete_item(
+    Key=key)
 
-table.delete() # deletes the table
-
-print('Table deleted:', 'Bucket_List') # The name of the deleted table will show
+# print the response
+print(response)
+print("Item deleted")

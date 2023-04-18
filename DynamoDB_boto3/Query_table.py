@@ -3,7 +3,7 @@ import boto3
 # this allows to use Key to define the key condition expression for the query
 from boto3.dynamodb.conditions import Key
 
-dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
+dynamodb = boto3.client('dynamodb', region_name='us-east-1')
 
 table = dynamodb.Table('Bucket_List')
 

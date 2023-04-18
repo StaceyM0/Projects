@@ -1,7 +1,7 @@
 import boto3
 
 # create a DynamoDB client
-dynamodb = boto3.resource('dynamodb')
+dynamodb = boto3.client('dynamodb')
 
 table = dynamodb.Table('Bucket_List') # get a reference to the table
 

@@ -1,7 +1,7 @@
 import boto3 # imports the boto3 library
 
 # create a DynamoDB resource object which will interact with the DynamoDB service
-dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
+dynamodb = boto3.client('dynamodb', region_name='us-east-1')
 
 table_name = 'Bucket_List' # Adding a variable to table_name
 

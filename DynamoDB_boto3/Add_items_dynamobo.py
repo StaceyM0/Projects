@@ -14,8 +14,8 @@ with table.batch_writer() as batch:
         )
     batch.put_item(
         Item={
-            'Country': 'Barcelona',
-            'City': 'Spain'
+            'Country': 'Spain',
+            'City': 'Barcelona'
             }
         )
     batch.put_item(
@@ -56,8 +56,8 @@ with table.batch_writer() as batch:
         )
     batch.put_item(
         Item={
-            'Country': 'Greece',
-            'City': 'Mykonos'
+            'Country': 'South Africa',
+            'City': 'Cape Town'
             }
         )
        

@@ -62,3 +62,5 @@ with table.batch_writer() as batch:
         )
        
     print("Items added") # this will be returned once the code is successful
+    
+    heck yes

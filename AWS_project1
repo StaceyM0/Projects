@@ -1,4 +1,4 @@
-#Create a list of services using Python. The list should be empty initially.
+##. #Create a list of services using Python. The list should be empty initially.
 aws_inventory = []
 
 #Populate the list using append or insert.

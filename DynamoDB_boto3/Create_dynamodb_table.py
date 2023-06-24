@@ -1,3 +1,6 @@
+
+
+
 import boto3 # This imports the boto3 library
 
 dynamodb = boto3.client('dynamodb', region_name='us-east-1') # 

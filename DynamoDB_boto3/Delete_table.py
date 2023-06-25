@@ -1,3 +1,6 @@
+
+
+
 import boto3 # imports the boto3 library
 
 # create a DynamoDB resource object which will interact with the DynamoDB service

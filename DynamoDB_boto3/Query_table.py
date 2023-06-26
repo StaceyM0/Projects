@@ -1,6 +1,3 @@
-
-
-
 import boto3
 
 # this allows to use Key to define the key condition expression for the query
